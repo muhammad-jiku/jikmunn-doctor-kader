@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Doctor from '../Doctor/Doctor';
 
-const Doctors = () => {
+const DoctorHomePage = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Doctors = () => {
         {console.log(doctors)}
         <h2>Available Services:</h2>
         <Row xs={1} md={2} lg={3} className="g-4">
-          {doctors.map((doc) => (
+          {doctors.slice(1, 4).map((doc) => (
             <Doctor key={doc?._id} doc={doc} />
           ))}
         </Row>
@@ -26,4 +26,4 @@ const Doctors = () => {
   );
 };
 
-export default Doctors;
+export default DoctorHomePage;
