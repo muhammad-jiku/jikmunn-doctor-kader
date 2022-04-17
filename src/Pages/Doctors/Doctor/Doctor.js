@@ -1,9 +1,16 @@
 import React from 'react';
 import { Button, Card, Col, Image } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Doctor = ({ doc }) => {
   console.log(doc);
-  const { name, image, star, available, fee, speciality } = doc;
+  const { _id, name, image, star, available, fee, speciality } = doc;
+
+  const navigate = useNavigate();
+
+  const navigateToDoctor = (id) => {
+    navigate(`/doctor/${id}`);
+  };
   return (
     <>
       <Col>
@@ -28,7 +35,7 @@ const Doctor = ({ doc }) => {
           </Card.Body>
           <Button
             className="btn btn-primary rounded"
-            // onClick={() => navigateToServiceDetail(_id)}
+            onClick={() => navigateToDoctor(_id)}
           >
             Book Appointment
           </Button>

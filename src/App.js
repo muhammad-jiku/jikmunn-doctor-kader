@@ -9,6 +9,8 @@ import Login from './Pages/Authentication/LogIn/Login';
 import Register from './Pages/Authentication/Register/Register';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
+import RequiredAuth from './Pages/Authentication/RequiredAuth/RequiredAuth';
+import DoctorsDetails from './Pages/Doctors/DoctorsDetails/DoctorsDetails';
 
 function App() {
   return (
@@ -18,6 +20,14 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/doctors" element={<Doctors />}></Route>
+        <Route
+          path="/doctor/:doctorId"
+          element={
+            <RequiredAuth>
+              <DoctorsDetails />
+            </RequiredAuth>
+          }
+        ></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/login" element={<Login />}></Route>
