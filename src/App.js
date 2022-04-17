@@ -14,7 +14,9 @@ import DoctorsDetails from './Pages/Doctors/DoctorsDetails/DoctorsDetails';
 
 function App() {
   return (
-    <div>
+    <div
+      style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+    >
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
