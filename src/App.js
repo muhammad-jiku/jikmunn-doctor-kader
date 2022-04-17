@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home/Home';
-import Doctors from './Pages/Home/Doctors/Doctors/Doctors';
+import Doctors from './Pages/Doctors/Doctors/Doctors';
 import Blogs from './Pages/Blogs/Blogs';
 import About from './Pages/About/About';
 import Login from './Pages/Authentication/LogIn/Login';

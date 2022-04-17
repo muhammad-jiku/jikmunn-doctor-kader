@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row } from 'react-bootstrap';
+import useDoctors from '../../../CustomHooks/useDoctors/useDoctors';
 import Doctor from '../Doctor/Doctor';
 
 const Doctors = () => {
-  const [doctors, setDoctors] = useState([]);
-
-  useEffect(() => {
-    fetch('doctorsDetails.json')
-      .then((res) => res.json())
-      .then((data) => setDoctors(data))
-      .catch((err) => console.log(err));
-  }, []);
+  const [doctors] = useDoctors();
   return (
     <>
       <Container fluid>
