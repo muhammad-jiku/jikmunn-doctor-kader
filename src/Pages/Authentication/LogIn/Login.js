@@ -3,6 +3,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogIn from '../SocialLogIn/SocialLogIn';
 
 const Login = () => {
   const emailRef = useRef('');
@@ -11,6 +12,8 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || '/';
+
+  let errorElement = '';
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -25,7 +28,7 @@ const Login = () => {
   };
 
   if (error) {
-    return (
+    errorElement = (
       <div>
         <p className="text-danger">
           Error: {error?.message}
@@ -98,9 +101,9 @@ const Login = () => {
             Reset Password
           </span>
         </p> */}
-        {/* {errorElement} */}
-        {/* <SocialLogIn />
-        <ToastContainer /> */}
+        {errorElement}
+        <SocialLogIn />
+        {/* <ToastContainer /> */}
       </Container>
     </>
   );

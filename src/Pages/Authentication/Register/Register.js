@@ -3,6 +3,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogIn from '../SocialLogIn/SocialLogIn';
 
 const Register = () => {
   const nameRef = useRef('');
@@ -13,6 +14,8 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || '/';
+
+  let errorElement = '';
 
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
@@ -30,16 +33,14 @@ const Register = () => {
     } else {
       alert('Please accept terms and conditions to create an account');
     }
-    // await updateProfile({ nameRef: name });
-    // alert('Updated profile');
   };
 
   if (error) {
-    return (
+    errorElement = (
       <div>
-        <p>
+        <p className="text-danger">
           Error: {error?.message}
-          {/* {updateError?.message} */}
+          {/* {emailError?.message} */}
         </p>
       </div>
     );
@@ -74,9 +75,6 @@ const Register = () => {
               ref={emailRef}
               required
             />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -109,7 +107,8 @@ const Register = () => {
             Log In now
           </span>
         </p>
-        {/* <SocialLogIn /> */}
+        {errorElement}
+        <SocialLogIn />
       </Container>
     </>
   );

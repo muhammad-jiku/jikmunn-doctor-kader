@@ -15,15 +15,7 @@ const Doctor = ({ doc }) => {
     <>
       <Col>
         <Card className="customCard">
-          <Image
-            variant="top"
-            src={image}
-            alt={name}
-            fluid
-            rounded
-            //   className="customCardImage"
-            style={{ height: '300px' }}
-          />
+          <Image variant="top" src={image} alt={name} fluid rounded />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text className="text-dark">{speciality}</Card.Text>
