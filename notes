@@ -1,0 +1,29 @@
+1. doctors app 
+2. making responsive
+3. meaningful site name in navbar and title 
+4. homepage > 1.header > 1. navbar 
+                         2. banner (carousel or static)
+              2. services section 
+              3. footer
+5. checkout page for service with protected routes
+6. authentication with email and password , social login (at least one social media)
+7. blogs route (not protected route ) 
+            qsn > 1. Difference between authorization and authentication
+                  2. Why are you using firebase? What other options do you have to implement authentication?
+                  3. What other services does firebase provide other than authentication
+8. about me section (not protected route ) 
+9. 404 page
+10. at least 9 commits
+11. readme > 1. site name and link
+             2. bullet point ( features, site details,)
+             3. lists of technology and frameworks
+12. displaying error
+13. email verification
+14. add a link for password reset (toast)
+
+------ 
+optional 
+------ 
+1. details of checkout page 
+2. active link 
+
