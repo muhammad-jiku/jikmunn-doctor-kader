@@ -51,13 +51,13 @@ const SocialLogIn = () => {
   const googleLogIn = async () => {
     await signInWithGoogle();
     await sendEmailVerification();
-    alert('Verify mail sent');
+    alert('Email verification message sent');
   };
 
   const githubLogIn = async () => {
     await signInWithGithub();
     await sendEmailVerification();
-    alert('Verify mail sent');
+    alert('Email verification message sent');
   };
 
   return (

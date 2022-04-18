@@ -22,15 +22,15 @@ const Register = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-
     const name = nameRef?.current?.value;
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
-    const terms = termsRef?.current?.checked;
 
+    const terms = termsRef?.current?.checked;
     if (terms) {
       console.log(name, email, password);
       await createUserWithEmailAndPassword(email, password);
+      alert('Email verification message sent');
     } else {
       alert('Please accept terms and conditions to create an account');
     }

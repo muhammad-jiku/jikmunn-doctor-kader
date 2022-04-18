@@ -7,6 +7,8 @@ import {
 } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogIn from '../SocialLogIn/SocialLogIn';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const emailRef = useRef('');
@@ -28,7 +30,6 @@ const Login = () => {
     e.preventDefault();
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
-
     console.log(email, password);
     signInWithEmailAndPassword(email, password);
   };
@@ -37,11 +38,9 @@ const Login = () => {
     const email = emailRef?.current?.value;
     if (email) {
       await sendPasswordResetEmail(email);
-      // toast('Sent email');
-      alert('Reset Email Sent ');
+      toast('Reset password email sent');
     } else {
-      // toast('Please Enter Email');
-      alert('Please Enter Email');
+      toast('Please enter email!!');
     }
   };
 
@@ -50,7 +49,6 @@ const Login = () => {
       <div>
         <p className="text-danger">
           Error: {error?.message} {resetError?.message}
-          {/* {emailError?.message} */}
         </p>
       </div>
     );
@@ -116,8 +114,8 @@ const Login = () => {
           </span>
         </p>
         {errorElement}
+        <ToastContainer />
         <SocialLogIn />
-        {/* <ToastContainer /> */}
       </Container>
     </>
   );
