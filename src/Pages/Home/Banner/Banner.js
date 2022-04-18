@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import doctors from '../../../Images/doctors.gif';
+import doctor from '../../../Images/pic_2.png';
 import './Banner.css';
 
 const Banner = () => {
@@ -30,7 +30,7 @@ const Banner = () => {
             <Button onClick={() => navigate('/services')}>Read More</Button>
           </div>
           <div className="bannerDetailsRight">
-            <img src={doctors} alt="" />
+            <img src={doctor} alt="" />
           </div>
         </div>
       </Container>

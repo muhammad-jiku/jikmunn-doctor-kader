@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
-import { Button, Container, Form } from 'react-bootstrap';
+import { Container, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogIn from '../SocialLogIn/SocialLogIn';
+import '../Authentication.css';
 
 const Register = () => {
   const nameRef = useRef('');
@@ -14,7 +15,7 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || '/';
-  console.log(location, from);
+
   let errorElement = '';
 
   const [createUserWithEmailAndPassword, user, loading, error] =
@@ -26,9 +27,13 @@ const Register = () => {
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
 
+    if (password.length < 6) {
+      alert('Password must be six letters');
+      return;
+    }
+
     const terms = termsRef?.current?.checked;
     if (terms) {
-      console.log(name, email, password);
       await createUserWithEmailAndPassword(email, password);
       alert('Email verification message sent');
     } else {
@@ -47,14 +52,16 @@ const Register = () => {
     return <p>Loading...</p>;
   }
   if (user) {
-    console.log(user);
     navigate(from, { replace: true });
   }
 
   return (
-    <>
-      <Container>
-        <Form className="my-4" onSubmit={handleRegister}>
+    <Container>
+      <h1 className="formDesignHeading">
+        Please Register an account to get the services
+      </h1>
+      <div className="formDesign">
+        <Form onSubmit={handleRegister}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -91,24 +98,18 @@ const Register = () => {
               ref={termsRef}
             />
           </Form.Group>
-          <Button variant="primary" className="w-100" type="submit">
+          <button className="formDesignButton" type="submit">
             Register
-          </Button>
+          </button>
         </Form>
-        <p>
+        <p className="toggleSection">
           Already have an account?
-          <span
-            className="text-danger"
-            style={{ cursor: 'pointer' }}
-            onClick={() => navigate('/login')}
-          >
-            Log In now
-          </span>
+          <span onClick={() => navigate('/login')}> Log In now</span>
         </p>
         {errorElement}
         <SocialLogIn />
-      </Container>
-    </>
+      </div>
+    </Container>
   );
 };
 

@@ -1,0 +1,33 @@
+.lineDraw{
+    background-color: brown;
+    height: 2px;
+    width: 50%;
+}
+
+.googleButton{
+    background-color: #A23302;
+    width: 50%;
+    margin: 0 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+.githubButton{
+    background-color: #FC4412;
+    width: 50%;
+    margin: 0 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+.googleButton:hover{
+    background-color: #9e3e15;
+}
+
+.githubButton:hover{
+    background-color: #b35831;
+}

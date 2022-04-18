@@ -7,6 +7,7 @@ const Services = () => {
   const [services] = useServices();
   return (
     <Container>
+      <h1 className="formDesignHeading">Services you might need</h1>
       <Row xs={1} md={2} lg={3} className="g-4">
         {services.map((serve) => (
           <Service key={serve?._id} serve={serve} />

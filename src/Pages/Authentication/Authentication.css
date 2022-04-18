@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+
+
+.formDesignHeading{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.formDesign{
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid brown;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formDesignButton{
+    background-color: brown;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.formDesignButton:hover{
+    background-color: rgb(196, 69, 69);
+}
+
+.toggleSection{
+    margin-top: 10px;
+}
+
+.toggleSection > span {
+    cursor: pointer;
+    color: brown;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .formDesign{
+    width: 100%;
+  }
+}

@@ -22,9 +22,13 @@
     font-family: 'Lobster', cursive;
 }
 
-.authorName > a{
+.authorName > a {
     color: wheat;
     font-size: 28px;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
+}
+
+.authorName > a:hover{
+    color: wheat;
 }

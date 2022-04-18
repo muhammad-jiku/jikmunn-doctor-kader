@@ -4,8 +4,6 @@ import './Feddback.css';
 import { Col } from 'react-bootstrap';
 
 const Feedback = ({ feedBack }) => {
-  console.log(feedBack);
-
   const { name, pic, feedback, date, ratings } = feedBack;
   return (
     <Col>

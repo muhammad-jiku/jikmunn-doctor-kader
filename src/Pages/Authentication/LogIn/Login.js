@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, Container, Form } from 'react-bootstrap';
+import { Container, Form } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import {
   useSendPasswordResetEmail,
@@ -9,6 +9,7 @@ import auth from '../../../firebase.init';
 import SocialLogIn from '../SocialLogIn/SocialLogIn';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../Authentication.css';
 
 const Login = () => {
   const emailRef = useRef('');
@@ -17,7 +18,6 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || '/';
-  console.log(location, from);
 
   let errorElement = '';
 
@@ -30,7 +30,7 @@ const Login = () => {
     e.preventDefault();
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
-    console.log(email, password);
+
     signInWithEmailAndPassword(email, password);
   };
 
@@ -67,9 +67,12 @@ const Login = () => {
   }
 
   return (
-    <>
-      <Container>
-        <Form className="my-4" onSubmit={handleLogIn}>
+    <Container>
+      <h1 className="formDesignHeading">
+        Please log into the account to get the services continuously
+      </h1>
+      <div className="formDesign">
+        <Form onSubmit={handleLogIn}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -89,35 +92,23 @@ const Login = () => {
               required
             />
           </Form.Group>
-          <Button variant="primary" className="w-100" type="submit">
+          <button className="formDesignButton" type="submit">
             Log in
-          </Button>
+          </button>
         </Form>
-        <p>
+        <p className="toggleSection">
           New here?
-          <span
-            className="text-danger"
-            style={{ cursor: 'pointer' }}
-            onClick={() => navigate('/register')}
-          >
-            Register now
-          </span>
+          <span onClick={() => navigate('/register')}> Register now</span>
         </p>
-        <p>
+        <p className="toggleSection">
           Forget Password?
-          <span
-            className="text-danger"
-            style={{ cursor: 'pointer' }}
-            onClick={handlePasswordReset}
-          >
-            Reset Password
-          </span>
+          <span onClick={handlePasswordReset}> Reset Password</span>
         </p>
         {errorElement}
         <ToastContainer />
         <SocialLogIn />
-      </Container>
-    </>
+      </div>
+    </Container>
   );
 };
 

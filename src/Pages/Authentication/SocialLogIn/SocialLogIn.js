@@ -5,10 +5,10 @@ import {
   useSignInWithGoogle,
 } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { Button } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import googleLogo from '../../../Images/google.png';
 import githubLogo from '../../../Images/github.png';
+import './SocialLogIn.css';
 
 const SocialLogIn = () => {
   const [signInWithGoogle, googleUser, googleLoading, googleError] =
@@ -17,8 +17,6 @@ const SocialLogIn = () => {
     useSignInWithGithub(auth);
   const [sendEmailVerification, sending, verifyError] =
     useSendEmailVerification(auth);
-
-  console.log(googleUser, githubUser);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -64,18 +62,18 @@ const SocialLogIn = () => {
     <>
       {errorElement}
       <div className="d-flex align-items-center justify-content-center">
-        <hr className="text-primary w-50" />
+        <div className="lineDraw"></div>
         <p className="m-4">or</p>
-        <hr className="text-primary w-50" />
+        <div className="lineDraw"></div>
       </div>
       <div className="d-flex">
-        <Button variant="info" className="w-50 mx-auto" onClick={googleLogIn}>
+        <button className="googleButton" onClick={googleLogIn}>
           <span className="text-white">Log In with </span>
           <img src={googleLogo} alt="google's logo" />
-        </Button>
-        <Button variant="secondary" className="w-50 mx-2" onClick={githubLogIn}>
+        </button>
+        <button className="githubButton" onClick={githubLogIn}>
           <span>Log In with </span> <img src={githubLogo} alt="github's logo" />
-        </Button>
+        </button>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ const Feedbacks = () => {
   const [feedbacks] = useFeedBack();
   return (
     <Container>
+      <h1 className="formDesignHeading">Patients's feedback</h1>
       <Row xs={1} md={2} lg={3} className="g-4">
         {feedbacks.map((feedBack) => (
           <Feedback key={feedBack?._id} feedBack={feedBack} />

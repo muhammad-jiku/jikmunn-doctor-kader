@@ -1,14 +1,14 @@
-/* imorting google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
 
 .serviceSectionCard{
   border: 1px solid #7E372F;
   border-radius: 10px;
   padding: 10px 0;
   width: 320px;
-  height: 500px; 
+  height: 600px; 
   position: relative;
-  margin: 0 auto;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 .serviceSectionCard > img {
