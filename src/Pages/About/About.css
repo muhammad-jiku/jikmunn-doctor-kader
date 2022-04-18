@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+
+.aboutSection{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutSectionLeft > img{
+    border-radius: 50%;
+    height: 300px;
+}
+
+.aboutSectionRight{
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.aboutSectionRightName{
+    color: #FC4412;
+}
