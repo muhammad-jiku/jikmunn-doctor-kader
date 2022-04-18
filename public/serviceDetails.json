@@ -1,0 +1,58 @@
+[
+  {
+    "_id": 101,
+    "name": "Dr. Arif Mohammad Sohan",
+    "description": "dsg",
+    "image": "https://i.ibb.co/Bfyx8hd/diabetes.jpg",
+    "fee": 500
+  },
+  {
+    "_id": 102,
+    "name": "Dr. Abdul Kader",
+    "description": "dsg",
+    "image": "https://i.ibb.co/6Fs0XnD/heart.jpg",
+    "fee": 500
+  },
+  {
+    "_id": 103,
+    "name": "Dr. Corey Martin",
+    "description": "dsg",
+    "image": "https://i.ibb.co/RcL68fM/sddefault.jpg",
+    "fee": 700
+  },
+  {
+    "_id": 104,
+    "name": "Dr. Hina J Shahida Rehman",
+    "description": "dsg",
+    "image": "https://i.ibb.co/FBm3LZT/Arthritis.jpg",
+    "fee": 500
+  },
+  {
+    "_id": 105,
+    "name": "Dr. Erlene Zamora",
+    "description": "dsg",
+    "image": "https://i.ibb.co/r38BPhK/asthma.png",
+    "fee": 500
+  },
+  {
+    "_id": 106,
+    "name": "Dr. Erlene Zamora",
+    "description": "dsg",
+    "image": "https://i.ibb.co/HdNGXDY/pregnancy.jpg",
+    "fee": 500
+  },
+  {
+    "_id": 107,
+    "name": "Dr. Erlene Zamora",
+    "description": "dsg",
+    "image": "https://i.ibb.co/ScZ1J83/new-coronavirus-and-human-human-figure-of-lung-vector-id1214221046-k-20-m-1214221046-s-612x612-w-0-h.jpg",
+    "fee": 500
+  },
+  {
+    "_id": 108,
+    "name": "Dr. Erlene Zamora",
+    "description": "dsg",
+    "image": "https://i.ibb.co/tzycTbg/Illo-Dot-High-Blood-Pressure-62a0990f21154e1ba775ade55f0e395a.png",
+    "fee": 500
+  }
+]

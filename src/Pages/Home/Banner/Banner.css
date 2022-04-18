@@ -23,7 +23,7 @@
 }
 
 .bannerDetailsLeft > button{
-    background-color: brown;
+    background-color: #681515;
     border: none;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
@@ -31,7 +31,7 @@
 }
 
 .bannerDetailsLeft > button:hover{
-    background-color: rgb(75, 19, 19); 
+    background-color: #9c2828; 
 }
 
 .bannerDetailsRight{

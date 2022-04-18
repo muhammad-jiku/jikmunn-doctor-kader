@@ -27,7 +27,7 @@ const Banner = () => {
               leader wirhin the field, he is commited to determining the
               appropiate procedure for each individual patient.
             </p>
-            <Button onClick={() => navigate('/doctors')}>Read More</Button>
+            <Button onClick={() => navigate('/services')}>Read More</Button>
           </div>
           <div className="bannerDetailsRight">
             <img src={doctors} alt="" />
