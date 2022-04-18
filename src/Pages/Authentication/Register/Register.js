@@ -14,11 +14,11 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || '/';
-
+  console.log(location, from);
   let errorElement = '';
 
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -27,6 +27,7 @@ const Register = () => {
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
     const terms = termsRef?.current?.checked;
+
     if (terms) {
       console.log(name, email, password);
       await createUserWithEmailAndPassword(email, password);
@@ -38,10 +39,7 @@ const Register = () => {
   if (error) {
     errorElement = (
       <div>
-        <p className="text-danger">
-          Error: {error?.message}
-          {/* {emailError?.message} */}
-        </p>
+        <p className="text-danger">Error: {error?.message}</p>
       </div>
     );
   }

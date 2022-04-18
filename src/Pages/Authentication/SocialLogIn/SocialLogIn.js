@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  useSendEmailVerification,
   useSignInWithGithub,
   useSignInWithGoogle,
 } from 'react-firebase-hooks/auth';
@@ -14,6 +15,8 @@ const SocialLogIn = () => {
     useSignInWithGoogle(auth);
   const [signInWithGithub, githubUser, githubLoading, githubError] =
     useSignInWithGithub(auth);
+  const [sendEmailVerification, sending, verifyError] =
+    useSendEmailVerification(auth);
 
   console.log(googleUser, githubUser);
 
@@ -23,11 +26,12 @@ const SocialLogIn = () => {
 
   let errorElement = '';
 
-  if (googleError || githubError) {
+  if (googleError || githubError || verifyError) {
     errorElement = (
       <div>
         <p className="text-danger">
-          Error: {googleError?.message} {githubError?.message}
+          Error: {googleError?.message} {githubError?.message}{' '}
+          {verifyError?.message}
         </p>
       </div>
     );
@@ -40,12 +44,20 @@ const SocialLogIn = () => {
     navigate(from, { replace: true });
   }
 
-  const googleLogIn = () => {
-    signInWithGoogle();
+  if (sending) {
+    return <p>Sending...</p>;
+  }
+
+  const googleLogIn = async () => {
+    await signInWithGoogle();
+    await sendEmailVerification();
+    alert('Verify mail sent');
   };
 
-  const githubLogIn = () => {
-    signInWithGithub();
+  const githubLogIn = async () => {
+    await signInWithGithub();
+    await sendEmailVerification();
+    alert('Verify mail sent');
   };
 
   return (

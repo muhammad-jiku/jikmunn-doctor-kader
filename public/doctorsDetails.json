@@ -2,180 +2,36 @@
   {
     "_id": 101,
     "name": "Dr. Arif Mohammad Sohan",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/cTs8q7d/Dr-Arif-Md-Sohan.jpg",
+    "desscription": "dsg",
+    "image": "https://i.ibb.co/3pfJCnh/asthma.jpg",
     "fee": 500
   },
   {
     "_id": 102,
     "name": "Dr. Abdul Kader",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/QHN9yRp/20220417-181324-removebg-preview-3.png",
+    "desscription": "dsg",
+    "image": "https://i.ibb.co/6Fs0XnD/heart.jpg",
     "fee": 500
   },
   {
     "_id": 103,
     "name": "Dr. Corey Martin",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Fri,Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/c8mY5gw/trends-affecting-physician-jobs.jpg",
+    "desscription": "dsg",
+    "image": "https://i.ibb.co/HdNGXDY/pregnancy.jpg",
     "fee": 700
   },
   {
     "_id": 104,
     "name": "Dr. Hina J Shahida Rehman",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/WvKz01w/dr-hina-shahid-MDA.png",
+    "desscription": "dsg",
+    "image": "https://i.ibb.co/FBm3LZT/Arthritis.jpg",
     "fee": 500
   },
   {
     "_id": 105,
     "name": "Dr. Erlene Zamora",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/280rQdh/confident-african-american-female-doctor-isolated-picture-id175399910-k-20-m-175399910-s-612x612-w-0.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 106,
-    "name": "Dr. Ben Wright",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/BKhPVBH/mens-doctor-uniform-1560841822-4957862.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 107,
-    "name": "Dr. Roy Walker",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/qnJ05vf/happy-healthcare-practitioner-picture-id138205019-k-20-m-138205019-s-612x612-w-0-h-Kps-SMVsplk-Oq-Tn.jpg"
-  },
-  {
-    "_id": 108,
-    "name": "Dr. Towhidur Rahman",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/NT9BKQp/Dr-Towhidur-Rahman.png",
-    "fee": 500
-  },
-  {
-    "_id": 109,
-    "name": "Dr. Tasnim jara",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/PGGZ2x0/tcci-P96-ERef-HBx-Efjo-J1rp-HMkx-Vi-Jn-UBm-Eds-Lq-QTcm-Nae-Jb-VE8n-EMv-G-g-Is-Rf-CR3-AI8kfpqxw-s900.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 110,
-    "name": "Dr. Batool Abdulkareem",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/1LX1kr7/ddafd53e-ba92-4006-9280-9396d06e58c3.png",
-    "fee": 500
-  },
-  {
-    "_id": 111,
-    "name": "Dr. Cecelia Kelley",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/8jKJNVx/BE-female-doctor-natural-hair-shutterstock.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 112,
-    "name": "Dr. Janice Turner",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 3,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/x6HqcBj/female-senior-doctor-hospital-medical-clinic-medicine-health-care-picture-id1179612492-k-20-m-117961.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 113,
-    "name": "Dr. Se-ri Baek",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/3N426rh/portrait-of-confident-female-doctor-with-clipboard-picture-id942265216-k-20-m-942265216-s-612x612-w.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 114,
-    "name": "Dr. Donald Stewart",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/Qdx7tRJ/never-fear-the-doctor-is-here-picture-id507954725-b-1-k-20-m-507954725-s-170667a-w-0-h-Znk-QOYz-D7-C.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 115,
-    "name": "Dr. Michael Baker",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/XV8LTj1/4aa196eb604ab4d81c83fac157f9e145.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 116,
-    "name": "Dr. Sri indira devi",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/26ppPsn/smiling-doctor-woman-with-arms-crossed-picture-id177839842-k-20-m-177839842-s-612x612-w-0-h-x-Gzfab.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 117,
-    "name": "Dr. Erick Moss",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 5,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/R4yqwCh/Black-Male-Doctor-Portrait-732x549-thumbnail.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 118,
-    "name": "Dr. Jacqueline Ward",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/Km99m3c/happy-female-doctor-in-hospital-picture-id503532118-k-20-m-503532118-s-612x612-w-0-h-Yq7-Nr-GEh-VEd.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 119,
-    "name": "Dr. Aisha Islam",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 4,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/mXH6nP0/res-1547667759782-1024x683.jpg",
-    "fee": 500
-  },
-  {
-    "_id": 120,
-    "name": "Dr. Leopoldo Scanlon",
-    "speciality": "Senior Consultant (Cardilogy)",
-    "star": 3,
-    "available": "Sat,Sun,Mon,Tues,Wed",
-    "image": "https://i.ibb.co/hD3N9RW/Doctors-1.jpg",
+    "desscription": "dsg",
+    "image": "https://i.ibb.co/Bfyx8hd/diabetes.jpg",
     "fee": 500
   }
 ]
