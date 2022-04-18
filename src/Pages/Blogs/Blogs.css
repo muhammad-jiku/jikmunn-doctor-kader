@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+
+
+.blogsContaier{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.blogsColumn > h3{
+    color: brown;
+    font-family: 'Pacifico', cursive;
+}
+
+.blogsColumn > p{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}

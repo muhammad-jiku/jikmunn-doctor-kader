@@ -3,14 +3,22 @@
 
 .footerSection{
     margin-top: auto;
-    padding: 10px;
+    padding: 5px 10px;
     background-color: #681515;
 }
 
-.footerSection > p{
+.footerSection > h3{
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    margin-top: 10px;
+}
+
+.footerSection > h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
     font-family: 'Lobster', cursive;
 }
 

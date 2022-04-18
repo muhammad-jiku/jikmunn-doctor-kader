@@ -19,7 +19,7 @@ const About = () => {
             . Welcome to Dr.Abdul Kader's personal site that I've designed. I'd
             love to be fullstack web-developer. I'd like to call myself "a
             passionate day dreamer". Right now, I am learning about
-            web-development. My dreams, goals all set to be the fullstack
+            web-development. My dreams, goals all are set to be the fullstack
             web-developer.
           </p>
         </div>

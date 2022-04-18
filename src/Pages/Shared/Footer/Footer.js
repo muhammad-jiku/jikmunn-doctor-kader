@@ -6,13 +6,13 @@ const Footer = () => {
   const date = new Date();
   return (
     <div className="footerSection">
-      <p>&copy;copyright {date.getFullYear()}</p>
-      <p>
+      <h3>&copy;copyright {date.getFullYear()}</h3>
+      <h4>
         This site is developed by{' '}
         <span className="authorName">
           <Link to="/about">JIKMUNN</Link>
         </span>
-      </p>
+      </h4>
     </div>
   );
 };
