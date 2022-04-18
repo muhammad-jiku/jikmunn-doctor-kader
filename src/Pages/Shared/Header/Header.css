@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Yanone+Kaffeesatz&display=swap');
+
+.navBarDesign{
+    background-color: rgb(104, 21, 21);
+}
+
+.navBarDesignLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBarDesignLogo > img{
+     height: 75px;
+}
+
+.navBarDesignLogo > h1{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+.navBarDesignLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarDesignLink > a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.navBarDesignLink > a:hover, a:focus{
+    color: white;
+    text-decoration: underline;
+}
+
+.navBarDesignPara > button{
+    background-color: brown;
+    color: white;
+    border: none;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.navBarDesignPara > button:hover{
+    background-color: white;
+    color: #E61D4C;
+}

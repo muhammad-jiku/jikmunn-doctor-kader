@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+
+.bannerDetails{
+    display: flex;
+    margin: 10px;
+}
+
+.bannerDetailsLeft{
+    width: 50%;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.bannerDetailsLeft > h1{
+    font-family: 'Lobster', cursive;
+}
+
+.bannerDetailsLeft > p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.bannerDetailsLeft > button{
+    background-color: brown;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.bannerDetailsLeft > button:hover{
+    background-color: rgb(75, 19, 19); 
+}
+
+.bannerDetailsRight{
+    width: 50%;
+}

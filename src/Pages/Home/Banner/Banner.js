@@ -1,30 +1,35 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import doctors from '../../../Images/doctors.gif';
+import './Banner.css';
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <Container fluid>
-        <div className="d-flex my-4">
-          <div>
-            <h1>Welcome to the doctor page</h1>
+      <Container>
+        <div className="bannerDetails">
+          <div className="bannerDetailsLeft">
+            <h1>
+              <span style={{ color: '#400303' }}>Recover,</span>{' '}
+              <span style={{ color: '#511010' }}>Heal</span>{' '}
+              <span style={{ color: '#47341B' }}>&</span>{' '}
+              <span style={{ color: '#681515' }}>Excel</span>
+            </h1>
             <p>
-              From unbroken while a stern said fast at home he. This the bird
-              stillness by some doubtless, lenore and purple bird once, louder
-              rapping thereis this muttered theeby placid within plainly and,
-              whispered whispered his ever with nevernevermore implore lenore
-              by, chamber that more then.
+              <strong style={{ color: '#823302' }}>
+                Dr. Abdul kader Pintu{' '}
+              </strong>{' '}
+              is a experienced medicine specialist. He serves his patient with
+              the most professional way. He has mind-blowing surgery record in
+              just 3 years. He also known for his diabetology study. An academic
+              leader wirhin the field, he is commited to determining the
+              appropiate procedure for each individual patient.
             </p>
-            <p>
-              From unbroken while a stern said fast at home he. This the bird
-              stillness by some doubtless, lenore and purple bird once, louder
-              rapping thereis this muttered theeby placid within plainly and,
-              whispered whispered his ever with nevernevermore implore lenore
-              by, chamber that more then.
-            </p>
+            <Button onClick={() => navigate('/doctors')}>Read More</Button>
           </div>
-          <div>
+          <div className="bannerDetailsRight">
             <img src={doctors} alt="" />
           </div>
         </div>

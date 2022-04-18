@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import siteLogo from '../../../Images/logo.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
+import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
 
   const logout = () => {
@@ -16,7 +18,7 @@ const Header = () => {
   if (loading) {
     return (
       <div>
-        <p>Initialising User...</p>
+        <p>Loading User...</p>
       </div>
     );
   }
@@ -32,40 +34,29 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="info"
-        variant="dark"
         sticky="top"
+        className="navBarDesign"
       >
         <Container>
-          <Navbar.Brand as={Link} to="/">
+          <div className="navBarDesignLogo" onClick={() => navigate('/')}>
             <img src={siteLogo} alt="Doctor Gallery logo" />
-            <span>Gallery</span>
-          </Navbar.Brand>
+            <h1>Dr.Abdul Kader</h1>
+          </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/doctors">
-                Doctors
-              </Nav.Link>
-              <Nav.Link as={Link} to="/blogs">
-                Blogs
-              </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                About
-              </Nav.Link>
+            <Nav className="ms-auto navBarDesignLink">
+              <Link to="/doctors">Doctors</Link>
+              <Link to="/blogs">Blogs</Link>
+              <Link to="/about">About</Link>
               {user ? (
-                <>
+                <div className="navBarDesignPara">
                   <Button onClick={logout}>Log out</Button>
-                  <p className="text-white">{user?.email}</p>
-                </>
+                  {/* <p className="text-dark">{user?.email}</p> */}
+                </div>
               ) : (
                 <>
-                  <Nav.Link as={Link} to="/login">
-                    Log In
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/register">
-                    Register
-                  </Nav.Link>
+                  <Link to="/login">Log In</Link>
+                  <Link to="/register">Register</Link>
                 </>
               )}
             </Nav>
