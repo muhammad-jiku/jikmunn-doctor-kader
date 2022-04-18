@@ -12,13 +12,11 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import RequiredAuth from './Pages/Authentication/RequiredAuth/RequiredAuth';
 import Feedbacks from './Pages/Feedbacks/Feedbacks/Feedbacks';
-// import Feedbacks from
+import './App.css';
 
 function App() {
   return (
-    <div
-      style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
-    >
+    <div className="mainSection">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>

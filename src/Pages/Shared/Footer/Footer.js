@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Footer.css';
 
 const Footer = () => {
   const date = new Date();
   return (
-    <div
-      style={{
-        marginTop: 'auto',
-      }}
-    >
-      <h3 className="text-center">&copy;copyright{date.getFullYear()}</h3>
+    <div className="footerSection">
+      <p>&copy;copyright {date.getFullYear()}</p>
+      <p>
+        This site is developed by{' '}
+        <span className="authorName">
+          <Link to="/about">JIKMUNN</Link>
+        </span>
+      </p>
     </div>
   );
 };

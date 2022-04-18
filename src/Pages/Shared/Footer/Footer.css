@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Poppins:wght@600&family=Yanone+Kaffeesatz&display=swap');
+
+.footerSection{
+    margin-top: auto;
+    padding: 10px;
+    background-color: #681515;
+}
+
+.footerSection > p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+.authorName > a{
+    color: wheat;
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
